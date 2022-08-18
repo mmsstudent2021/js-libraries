@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Libraries Testing</title>
+    <link rel="stylesheet" href="node_modules/venobox/dist/venobox.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .small-img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg w-100 top-0 wow animate__slideInDown  bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="m-5 p-5">
+    <a class="aa" data-gall="aag" data-maxwidth="800px" href="image/65862753_3347651068585809_5522628206584135680_n.jpeg">
+        <img src="image/814a7183_edit_2-683x1024.jpeg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="aa" data-gall="aag" data-maxwidth="800px" href="image/aca7057389eb830cc8781ad11bacb242.jpeg">
+        <img src="image/aca7057389eb830cc8781ad11bacb242.jpeg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="aa" data-gall="aag" data-maxwidth="800px" href="image/7708f2cdb11abd92510c354816e8515e.jpeg">
+        <img src="image/7708f2cdb11abd92510c354816e8515e.jpeg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="aa" data-gall="aag" data-maxwidth="800px" href="image/1d8fa93e93107f15d77738ad36a5d466.jpeg">
+        <img src="image/1d8fa93e93107f15d77738ad36a5d466.jpeg" class="small-img" alt="image alt"/>
+    </a>
+</div>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/venobox/dist/venobox.min.js"></script>
+<script>
+
+    new VenoBox({
+        selector : ".aa",
+        share : true,
+        infinigall : true,
+        overlayColor:'rgba(255,255,255,0.85)',
+        spinner : 'plane'
+    })
+
+</script>
+</body>
+</html>

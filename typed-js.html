@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Libraries Testing</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="m-5 p-5 border border-primary">
+    <h1>
+        Min Ga Lar Par <span id="text"></span>
+    </h1>
+</div>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/typed.js/lib/typed.min.js"></script>
+<script>
+    new Typed("#text",{
+        strings : [
+            "User <span class='text-success'>Lay</span>",
+            "Byar"
+        ],
+        typeSpeed : 200,
+        backSpeed : 100,
+        loop : true,
+        backDelay: 2000,
+        // fadeOut : true
+
+    });
+</script>
+</body>
+</html>

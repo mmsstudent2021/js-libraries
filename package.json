@@ -1,0 +1,25 @@
+{
+  "name": "js-libraries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "chart.js": "^3.9.1",
+    "counterup2": "^2.0.2",
+    "glider-js": "^1.7.7",
+    "sweetalert2": "^11.4.28",
+    "typed.js": "^2.0.12",
+    "venobox": "^2.0.4",
+    "waypoints": "^4.0.1",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Libraries Testing</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/glider-js/glider.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg w-100 top-0 wow animate__slideInDown  bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="m-5 p-5">
+    <div class="glider-contain">
+        <div class="glider">
+            <h1 class="bg-primary p-5 text-center"> 1 </h1>
+            <h1 class="bg-secondary p-5 text-center"> 2 </h1>
+            <h1 class="bg-success p-5 text-center"> 3 </h1>
+            <h1 class="bg-info p-5 text-center"> 4 </h1>
+            <h1 class="bg-danger p-5 text-center"> 5 </h1>
+            <h1 class="bg-warning p-5 text-center"> 6 </h1>
+        </div>
+        <button aria-label="Previous" class="glider-prev">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        <button aria-label="Next" class="glider-next">
+            <i class="bi bi-arrow-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+    </div>
+</div>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/glider-js/glider.min.js"></script>
+<script>
+
+    new Glider(document.querySelector('.glider'),{
+        slidesToShow: 3,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            // may also pass element directly
+            next: ".glider-next",
+        },
+    });
+</script>
+</body>
+</html>
